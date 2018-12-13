@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      7405,        193]
-NotebookOptionsPosition[      6653,        171]
-NotebookOutlinePosition[      7010,        187]
-CellTagsIndexPosition[      6967,        184]
+NotebookDataLength[      8243,        212]
+NotebookOptionsPosition[      7397,        189]
+NotebookOutlinePosition[      7754,        205]
+CellTagsIndexPosition[      7711,        202]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -78,12 +78,13 @@ Cell[BoxData[{
     "\:4e1a\:52a1\:7684\:4f18\:5148\:7ea7\:5206\:4e3a3\:4e2a\:7b49\:7ea7", 
      " ", "=", "1"}], "\:ff0c", "2", "\:ff0c", "3", "\:ff0c", 
     "\:5e76\:968f\:673a\:5206\:914d\:4e1a\:52a1\:4f18\:5148\:7ea7", 
-    "\:3002"}], "\[IndentingNewLine]", "\[IndentingNewLine]", "*)"}], 
+    "\:3002"}], "\[IndentingNewLine]", "*)"}], "\[IndentingNewLine]", 
   "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "\:8bd5\:8bd5\:968f\:673a\:6784\:5efa\:4e00\:4e2a\:4e1a\:52a1", "\:ff0c", 
-    "\:5e76\:4e14\:5b8c\:6210\:9009\:8def"}], "*)"}]}], "\[IndentingNewLine]", 
+    "\:5e76\:4e14\:5b8c\:6210\:9009\:8def"}], "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Startpoint", " ", "=", " ", 
    RowBox[{"RandomInteger", "[", 
@@ -104,11 +105,12 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"FindShortestPath", "[", 
    RowBox[{"d", ",", "Startpoint", ",", "Endpoint"}], "]"}], 
-  "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]", 
   RowBox[{"(*", 
    RowBox[{
    "\:8bd5\:7740\:521b\:5efa\:4e1a\:52a1\:5e26\:5bbd", "\:ff0c", 
-    "\:4ee5\:53ca\:4f18\:5148\:7ea7"}], "*)"}]}], "\[IndentingNewLine]", 
+    "\:4ee5\:53ca\:4f18\:5148\:7ea7"}], "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"while", "[", 
    RowBox[{",", 
@@ -120,35 +122,51 @@ Cell[BoxData[{
      RowBox[{"if", "[", 
       RowBox[{
        RowBox[{"Bandwidth", ">", "0"}], ",", "break", ",", "Continue"}], 
-      "]"}]}]}], "]"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"RandomInteger", "[", 
-  RowBox[{"{", 
-   RowBox[{"1", ",", "3"}], "}"}], "]"}], "\[IndentingNewLine]"}], "Input",
+      "]"}]}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", "Bandwidth", "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Priority", "=", 
+   RowBox[{"RandomInteger", "[", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "3"}], "}"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+  "(*", "\:73b0\:5728\:8f6e\:5230\:8def\:7531\:5e26\:5bbd\:7684\:8bbe\:7f6e\
+\:4e86", "*)"}]}]}], "Input",
  CellChangeTimes->{{3.7536551337376037`*^9, 3.7536551427233367`*^9}, {
   3.7536553738138494`*^9, 3.753655425275528*^9}, {3.75365931898697*^9, 
   3.753659354630089*^9}, {3.7536599620052776`*^9, 3.753660140719323*^9}, {
   3.753660188127253*^9, 3.753660318056196*^9}, {3.7536603756345587`*^9, 
   3.753660404814646*^9}, {3.753660443517889*^9, 3.753660686333546*^9}, {
   3.7536609522543154`*^9, 3.7536609964948645`*^9}, {3.753661138348106*^9, 
-  3.753661140401843*^9}, {3.753661172176132*^9, 3.753661271484433*^9}},
- CellLabel->
-  "In[300]:=",ExpressionUUID->"bc9c0af4-8532-4241-a6c1-147549fd7f75"],
+  3.753661140401843*^9}, {3.753661172176132*^9, 3.753661271484433*^9}, {
+  3.7536615160951138`*^9, 3.7536615420242*^9}, {3.7536615866687937`*^9, 
+  3.753661633741086*^9}},ExpressionUUID->"bc9c0af4-8532-4241-a6c1-\
+147549fd7f75"],
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{"7", ",", "9", ",", "18", ",", "6"}], "}"}]], "Output",
+  RowBox[{"8", ",", "4", ",", "13"}], "}"}]], "Output",
  CellChangeTimes->{{3.753660987957104*^9, 3.7536609972494*^9}, {
-  3.753661145160921*^9, 3.7536611549716797`*^9}, {3.7536612534265175`*^9, 
-  3.753661279236675*^9}},
+   3.753661145160921*^9, 3.7536611549716797`*^9}, {3.7536612534265175`*^9, 
+   3.753661279236675*^9}, 3.7536615473759146`*^9},
  CellLabel->
-  "Out[304]=",ExpressionUUID->"66c12030-6fa9-49db-819d-3b35af826adb"],
+  "Out[311]=",ExpressionUUID->"3ce647f2-d2c2-4975-b986-98a179fe2359"],
+
+Cell[BoxData["1.7530098340344074`"], "Output",
+ CellChangeTimes->{{3.753660987957104*^9, 3.7536609972494*^9}, {
+   3.753661145160921*^9, 3.7536611549716797`*^9}, {3.7536612534265175`*^9, 
+   3.753661279236675*^9}, 3.7536615473839097`*^9},
+ CellLabel->
+  "Out[313]=",ExpressionUUID->"01efd82e-625f-4420-94be-1caf2b311ec5"],
 
 Cell[BoxData["2"], "Output",
  CellChangeTimes->{{3.753660987957104*^9, 3.7536609972494*^9}, {
-  3.753661145160921*^9, 3.7536611549716797`*^9}, {3.7536612534265175`*^9, 
-  3.7536612792496676`*^9}},
+   3.753661145160921*^9, 3.7536611549716797`*^9}, {3.7536612534265175`*^9, 
+   3.753661279236675*^9}, 3.7536615473929033`*^9},
  CellLabel->
-  "Out[306]=",ExpressionUUID->"1416bce7-c6e2-494c-9b7a-6d4c0b527129"]
+  "Out[314]=",ExpressionUUID->"c478e0e2-aadd-435c-a2aa-39570ea4fae9"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -187,17 +205,16 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 4757, 112, 590, "Input",ExpressionUUID->"bc9c0af4-8532-4241-a6c1-147549fd7f75"],
-Cell[5340, 136, 343, 7, 32, "Output",ExpressionUUID->"66c12030-6fa9-49db-819d-3b35af826adb"],
-Cell[5686, 145, 279, 5, 32, "Output",ExpressionUUID->"1416bce7-c6e2-494c-9b7a-6d4c0b527129"]
+Cell[580, 22, 5137, 123, 685, "Input",ExpressionUUID->"bc9c0af4-8532-4241-a6c1-147549fd7f75"],
+Cell[5720, 147, 359, 7, 32, "Output",ExpressionUUID->"3ce647f2-d2c2-4975-b986-98a179fe2359"],
+Cell[6082, 156, 321, 5, 32, "Output",ExpressionUUID->"01efd82e-625f-4420-94be-1caf2b311ec5"],
+Cell[6406, 163, 303, 5, 32, "Output",ExpressionUUID->"c478e0e2-aadd-435c-a2aa-39570ea4fae9"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6002, 155, 154, 3, 28, "Input",ExpressionUUID->"d55a4084-452a-496c-8cc9-4d209ff5fcfd"],
-Cell[6159, 160, 478, 8, 32, "Output",ExpressionUUID->"4a4fa5d7-a851-4676-bf2a-d1261ceb4eca"]
+Cell[6746, 173, 154, 3, 28, "Input",ExpressionUUID->"d55a4084-452a-496c-8cc9-4d209ff5fcfd"],
+Cell[6903, 178, 478, 8, 32, "Output",ExpressionUUID->"4a4fa5d7-a851-4676-bf2a-d1261ceb4eca"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
